@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * {
+    margin: 0;
+  }
+    nav {
+      height: 75px;
+      background-color: pink;
+    }
+
+    header {
+      height: 400px;
+      background-color: orange;
+    }
+
+    section {
+      height: 500px;
+      background-color: silver;
+      margin: 75px 100px;
+    }
+
+    .flex-item {
+      height: 230px;
+      width: 48%;
+      background-color: red;
+      font-size: 150%;
+    }
+
+      .PreFooter {
+        height: 40px;
+        background-color: tomato;
+        text-align: center;
+      }
+
+      footer {
+        height: 100px;
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+
+      p {
+        height: 100px;
+        background-color: blue;
+        margin-bottom: 70px;
+      }
+
+      #flex-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+  #center {
+    text-align: center;
+    font-size: 350%;
+  }
+
+  #center2 {
+    font-size: 150%;
+  }
+</style>
+  </head>
+  <body>
+<div>
+  <nav><h1>Портал: Туризм</h1> <a href="#">simple</a>|<a href="#">simple2</a>|<a href="#">simple3</a></nav>
+  <header>
+  <div id="center">
+    <h2>Новини</h2>
+    <h1>Туризм</h1>
+    <h3>Архіви</h3>
+    </div>
+  </header>
+  <section>
+    <p id="center2">Що таке туризм?<br/>
+    Туризм — вид активного відпочинку у формі вимаршів (мандрівництво) або виїздів поза місце постійного перебування, поєднаних з розвагами, пізнаванням природного оточення рідного краю чи інших країн.</p>
+    <div id="flex-container">
+      <span class="flex-item">Поняття<br />
+        Подорож — переміщення по якійсь певній території з ціллю її вивчення, а також із загальноосвітньою, пізнавальною, спортивною цілями.<br />
+        Турист — особа, яка здійснює подорож з різною, не забороненою законом країни перебування, метою на термін від 24 годин до 365 днів.</span>
+      <span class="flex-item">Цікавинки<br />
+        Найдавнішою збереженою цивільною будівлею Києва є Будинок Галшки Гулевичівни, з якого почалася Києво-Могилянська академія.<br />
+        Замковий міст у Кам'янці-Подільському сполучає не правий і лівий береги Смотрича, а проліг між двома правими берегами річки.</span>
+      </div>
+  </section>
+  <div class="PreFooter"><blackquote>copyright | Marina Kozachenko</blackquote></div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Parallax</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  background-image: url('24.jpg');
+
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+<body>
+<h1>Параллакс отключить</h1>
+
+<p>В этом примере мы отключили параллакс прокрутки для мобильных устройств. Он работает на всех экранов рабочего стола.</p>
+<p>Прокрутите страницу вверх и вниз, чтобы увидеть эффект параллакса прокрутки.</p>
+
+<div class="parallax"></div>
+<div style="height:1000px;background-color: red;font-size:36px">
+Этот div здесь, чтобы включить прокрутку.
+<p><strong>Совет:</strong> Попробуйте удалить свойство background-attachment, чтобы удалить эффект прокрутки.</p>
+</div>
+<div class="parallax"></div>
+</body>
+</html>
